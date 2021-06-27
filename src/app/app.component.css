@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', 'Arial', sans-serif;
+    line-height: 150%;
+    box-sizing: border-box;
+}
+
+section {
+    padding: 5rem 0;
+}
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.strong-text {
+    font-weight: 900;
+}
+
+.profile-img {
+    border-radius: 8px;
+    width: 80%;
+}
+
+.section-hero {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../assets/images/hero-img.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.section-projects {
+    background-image: linear-gradient(rgba(191, 246, 249,0.8), rgba(191, 246, 249,0.4)), url(../assets/images/projects-bg.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-text {
+    color: #fff;
+    text-align: center;
+}
+
+.light-text {
+    font-weight: 300;
+}
+
+.get-in-touch {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 1px solid lightskyblue;
+    border-radius: 200px;
+    cursor: pointer;
+    margin: 1rem 0;
+}
+
+.get-in-touch:hover {
+    background-color: lightskyblue;
+    color: #000;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.nav-list {
+    align-items: center;
+}
+
+.nav-list li{
+    display: inline-block;
+    margin: 1rem 2rem;
+    text-transform: uppercase;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-list li a:hover{
+    color: lightskyblue;
+    padding: 8px 0;
+    border-bottom: 2px solid lightskyblue;
+}
+
+.header-links {
+    text-align: center;
+}
+
+.social-links-test {
+    margin-top: 2rem;
+}
+
+.social-links span{
+    font-size: 1.2rem;
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.social-links span a{
+    text-decoration: none;
+}
+
+.social-links span:hover{
+    color: lightskyblue;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.container h2{
+    margin-bottom: 2rem;
+}
+
+.about-me-blocks {
+    margin: 2rem 0;
+}
+
+.card h5 {
+    padding: 2rem;
+}
+
+.about-section-icons {
+    margin-top: 1rem;
+    color: lightskyblue;
+}
+
+.section-experience {
+    background-color: #ECEBE7;
+}
+
+.timeline {
+    border-left: solid 2px lightskyblue;
+}
+
+.timeline-object {
+    margin: 2rem 0;
+    text-align: start;
+    padding: 1rem;
+    position: relative;
+}
+
+.timeline-object::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: solid 2px lightskyblue;
+    background-color: #000;
+    position: absolute;
+    top: 27px;
+    left: -6px;
+}
+
+.custflex {
+    display: flex;
+    flex: 1 1 0;
+}
+
+.equal-width {
+    width: 30%;
+}
+
+.font-small {
+    font-size: 0.8rem;
+}
+
+@media(min-width: 768px) {
+    .profile-img {
+        width: 25%;
+    }
+
+    .social-links span{
+        font-size: 2rem;
+    }
+}
