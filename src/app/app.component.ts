@@ -3,7 +3,7 @@ import { faFacebook, faTwitter, faLinkedin, faInstagram } from '@fortawesome/fre
 import { faMobileAlt, faLaptop, faServer, faCodeBranch } from '@fortawesome/free-solid-svg-icons';
 import { environment } from '../environments/environment';
 
-declare let ga: Function;
+declare let gtag: Function;
 
 @Component({
   selector: 'app-root',
@@ -34,8 +34,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     if (environment.production) {
-      ga('create', 'G-J3FGDEBVLK', 'auto');
-      ga('send', 'pageview');
+      gtag('config', 'G-J3FGDEBVLK');
     }
 
     this.screenWidth = window.innerWidth;
@@ -46,7 +45,6 @@ export class AppComponent implements OnInit {
   onResize(event) {
     this.screenWidth = window.innerWidth;
     this.screenHeight = window.innerHeight;
-    console.log(this.screenWidth);
   }
 
   onToggle() {
