@@ -33,6 +33,7 @@ export class AppComponent implements OnInit {
   };
 
   ngOnInit() {
+    console.log(environment.production);
     if (environment.production) {
       gtag('config', 'G-J3FGDEBVLK');
     }
